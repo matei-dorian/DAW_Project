@@ -1,0 +1,65 @@
+<div class="page">
+<div class='card'>
+    <div class='card-header'>
+      {{pageTitle + ': ' + product?.name | convertCharacter: '_' : ' ' | titlecase}}
+    </div>
+  
+    <div class='card-body'
+         *ngIf='product'>
+      <div class='row'>
+        <div class='col-md-8'>
+          <div class='row'>
+            <div class='col-md-4'>Name:</div>
+            <div class='col-md-8'>{{product.name | convertCharacter: '_' : ' ' | titlecase}}</div>
+          </div>
+          <div class='row'>
+            <div class='col-md-4'>Brand:</div>
+            <div class='col-md-8'>{{product.brand}}</div>
+          </div>
+          <div class='row'>
+            <div class='col-md-4'>Category:</div>
+            <div class='col-md-8'>{{product.category}}</div>
+          </div>
+          <div class='row'>
+            <div class='col-md-4'>Colour:</div>
+            <div class='col-md-8'>{{product.colour}}</div>
+          </div>
+          <div class='row'>
+            <div class='col-md-4'>Price:</div>
+            <div class='col-md-8'>{{product.price | currency:'USD':'symbol'}}</div>
+          </div>
+          <div class='row'>
+            <div class='col-md-4'>5 Star Rating:</div>
+            <div class='col-md-8'>
+              <fs-star [rating]='product.rating'>
+              </fs-star>
+            </div>
+          </div>
+        </div>
+  
+        <div class='col-md-4'>
+          <img class='center-block img-responsive'
+               [style.width.px]='200'
+               [style.margin.px]='2'
+               [src]='product.image'
+               [title]='product.name'>
+        </div>
+      </div>
+    </div>
+  
+    <div class='card-footer'>
+      <button class='btn btn-outline-secondary'
+              style='width:80px'
+              (click)='addToCart()'
+              appHoverBtn>
+        <i class='fa fa-chevron-left'></i> Add To Cart
+      </button>
+      <button class='btn btn-outline-secondary'
+              style='width:80px'
+              (click)='onBack()'
+              appHoverBtn>
+        <i class='fa fa-chevron-left'></i> Back
+      </button>
+    </div>
+  </div>
+</div>

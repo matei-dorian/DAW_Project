@@ -1,0 +1,13 @@
+<div class="login-page">
+    <h1>Welcome!</h1>
+    <div class="form">
+      <span>Register your account:</span>
+      <form [formGroup] = "registerForm" class="register-form">
+        <input type="text" placeholder="First Name" formControlName="firstName"/>
+        <input type="text" placeholder="Last Name" formControlName="lastName"/>
+        <input type="password" placeholder="Password" formControlName="password"/>
+        <input type="text" placeholder="Email address" formControlName="email"/>
+        <button (click)="createUser()">create</button>
+      </form>
+    </div>
+</div>

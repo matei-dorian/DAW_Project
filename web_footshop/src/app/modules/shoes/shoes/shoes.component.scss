@@ -1,0 +1,44 @@
+thead {
+    color: #337AB7;
+  }
+
+.page{
+  width: 80%;
+  margin: auto auto auto auto;
+  padding-top: 2rem;
+}
+
+body{
+  background-color: fde8b6;
+}
+
+.footer{
+  margin: 1rem auto auto auto;
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: white;
+}
+
+.card-header{
+  font-weight: bold;
+}
+
+span{
+  display:inline-block;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+}
+
+.flex > button {
+  margin: auto;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+}

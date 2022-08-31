@@ -1,0 +1,13 @@
+<div class="login-page">
+    <h1>FootShop</h1>
+    <div [formGroup] = "loginForm" class="form">
+      <form class="login-form">
+        <span *ngIf = "loginFailed == true" class="error">Wrong credentials</span>
+        <input type="text" placeholder="Username" formControlName="email"/>
+        <input type="password" placeholder="Password" formControlName="password"/>
+        <button (click) = "login()">Login</button>
+        <p class="message">Not registered? <a (click) = "register()">Create an account</a></p>
+      </form>
+    </div>
+</div>
+

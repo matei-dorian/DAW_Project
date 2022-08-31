@@ -1,0 +1,21 @@
+.page{
+    width: 65%;
+    margin: auto auto auto auto;
+    padding-top: 2rem;
+  }
+
+.card-header{
+    font-weight: bold;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-footer > button{
+    margin: auto;
+    width: 15% !important;
+    height: 20% !important;
+}
