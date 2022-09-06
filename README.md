@@ -5,6 +5,7 @@ Login, Register, Order, Shoes, Shoe-detail
 
 ## Rute 
 Rute fara parametru: /shoes, /order, /auth
+
 Rute cu parametru: /detail/:id
 
 ## Servicii conectate la serverul .NET
